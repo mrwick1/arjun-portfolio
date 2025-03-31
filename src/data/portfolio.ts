@@ -15,7 +15,7 @@ export const portfolioData: Portfolio[] = [
     technologies: ["React", "Tailwind CSS"],
     projectUrl: "https://brainwave-blue.vercel.app/",
     imageUrl:
-      "/assets/images/carrent.png",
+      "/assets/images/carrent.webp",
     codeUrl: "https://github.com/mrwick1/brainwave",
   },
   {
@@ -25,7 +25,7 @@ export const portfolioData: Portfolio[] = [
     technologies: ["React", "Tailwind CSS"],
     projectUrl: "https://hoobank-sepia.vercel.app/",
     imageUrl:
-      "/assets/images/jobit.png",
+      "/assets/images/jobit.webp",
     codeUrl: "https://github.com/mrwick1/hoobank",
   },
   {
@@ -34,7 +34,7 @@ export const portfolioData: Portfolio[] = [
     technologies: ["React", "CSS"],
     projectUrl: "https://open-ai-dun.vercel.app/",
     imageUrl:
-      "/assets/images/tripguide.png",
+      "/assets/images/tripguide.webp",
     codeUrl: "https://github.com/mrwick1/open-ai",
   },
   {
@@ -43,7 +43,7 @@ export const portfolioData: Portfolio[] = [
     technologies: ["Next.js", "Tailwind CSS", "GSAP"],
     projectUrl: "https://glisten-ai-wheat.vercel.app/",
     imageUrl:
-      "/assets/images/glisten.png", 
+      "/assets/images/glisten.webp", 
     codeUrl: "https://github.com/mrwick1/glisten-app",
   },
 ];
