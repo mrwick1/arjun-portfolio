@@ -6,7 +6,6 @@ import {
   Twitter,
   ArrowUpRight,
   GraduationCap,
-  Download,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
 import { SkillsSection } from "./skills-section";
