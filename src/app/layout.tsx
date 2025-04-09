@@ -47,7 +47,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: customMetadata.title || aboutMe.name,
   description: customMetadata.description || aboutMe.description,
-  keywords: ['Frontend Engineer', 'React.js', 'TypeScript', 'Web Development', 'Portfolio', 'Software Engineer'],
+  keywords: ['Frontend Engineer', 'React.js', 'TypeScript', 'Web Development', 'Software Engineer' , 'Senior Frontend Engineer'],
   authors: [{ name: aboutMe.name }],
   creator: aboutMe.name,
   publisher: aboutMe.name,
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
         url: '/assets/images/laptop.webp',
         width: 1200,
         height: 630,
-        alt: 'Arjun - Senior Frontend Engineer Portfolio',
+        alt: 'Arjun - Senior Frontend Engineer',
       },
     ],
   },
