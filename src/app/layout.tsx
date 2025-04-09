@@ -20,22 +20,6 @@ const geistMono = Geist_Mono({
   preload: true,
 });
 
-// Load these fonts only when needed
-const notoSerif = Noto_Serif({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: 'swap',
-  preload: false,
-});
-
-const ptSerif = PT_Serif({
-  variable: "--font-pt-serif",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: 'swap',
-  preload: false,
-});
 
 // Separate viewport configuration
 export const viewport: Viewport = {
