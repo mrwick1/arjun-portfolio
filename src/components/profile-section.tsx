@@ -21,7 +21,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
 
   return (
     <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
-      {aboutMe.imageUrl && (
+      {/* {aboutMe.imageUrl && (
         <div className="w-1/3 md:w-full flex-shrink-0">
           <div className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]">
             <Image
@@ -33,7 +33,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             />
           </div>
         </div>
-      )}
+      )} */}
       <div className="w-2/3 md:w-full">
         <h1 className="font-serif text-3xl font-light tracking-wide mb-3">
           {aboutMe.name}
