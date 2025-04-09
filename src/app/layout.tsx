@@ -3,9 +3,9 @@ import { Geist, Geist_Mono, Noto_Serif, PT_Serif } from "next/font/google";
 import "./globals.css";
 import { aboutMe } from "@/data/aboutme";
 import { customMetadata } from "@/data/title-description";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import AnalyticsWrapper from "@/components/AnalyticsWrapper";
 
+// Optimize font loading
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,12 +20,13 @@ const geistMono = Geist_Mono({
   preload: true,
 });
 
+// Load these fonts only when needed
 const notoSerif = Noto_Serif({
   variable: "--font-noto-serif",
   subsets: ["latin"],
   weight: ["400", "700"],
   display: 'swap',
-  preload: true,
+  preload: false,
 });
 
 const ptSerif = PT_Serif({
@@ -33,14 +34,13 @@ const ptSerif = PT_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: 'swap',
-  preload: true,
+  preload: false,
 });
 
 // Separate viewport configuration
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
   themeColor: '#FFFCF8',
 };
 
@@ -119,11 +119,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} ${ptSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main className="">{children}</main>
-        <SpeedInsights />
-        <Analytics />
+        <AnalyticsWrapper />
         <footer className="border-t border-neutral-200 dark:border-neutral-800 bg-[#FFFCF8]">
           <div className="flex flex-row mx-auto max-w-7xl px-6 py-12 md:flex md:items-start md:justify-between ">
             <div className="mb-4 text-sm text-neutral-600 dark:text-neutral-400">
