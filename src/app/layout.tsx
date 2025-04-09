@@ -48,11 +48,13 @@ export const metadata: Metadata = {
   title: customMetadata.title || aboutMe.name,
   description: customMetadata.description || aboutMe.description,
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.svg',
+    icon: [
+      { url: 'favicon.ico', sizes: 'any' },
+      { url: 'favicon.svg', type: 'image/svg+xml' }
+    ],
+    apple: 'favicon.svg',
   },
-  manifest: '/manifest.json',
+  manifest: 'manifest.json',
 };
 
 export default function RootLayout({
