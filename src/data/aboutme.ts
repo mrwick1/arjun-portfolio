@@ -26,8 +26,8 @@ export const aboutMe: AboutMe = {
   description:
     "A results-driven Senior Frontend Engineer with a passion for building scalable and high-performance web applications. Proven ability to lead UI development using modern technologies like React.js , Next.js and TypeScript, drive architectural improvements, and mentor development teams.",
   email: "arjun.codesmith@gmail.com",
-  imageUrl:
-    "https://github.com/mrwick1.png",
+  // imageUrl:
+  //   "https://github.com/mrwick1.png",
   googleScholarUrl: undefined,
   githubUsername: "mrwick1",
   linkedinUsername: "arjunp-software-developer",
